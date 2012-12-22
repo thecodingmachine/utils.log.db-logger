@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+	<displayName>Database Logger</displayName>
+	<shortDescription>This package contains a logger that stores the logs in database.</shortDescription>
+	<docUrl></docUrl>
+	<logo>logo.png</logo>
+	<requires>
+		<require>DbLogger.php</require>
+	</requires>
+	<adminRequires>
+		<require>controllers/DbLoggerInstallController.php</require>
+		<require>DbLoggerAdmin.php</require>
+	</adminRequires>
+	<dependencies>
+		<dependency>
+			<group>utils/common</group>
+			<name>mouf_helpers</name>
+			<version>>=1.0</version>
+		</dependency>
+		<dependency>
+			<group>utils/log</group>
+			<name>log_interface</name>
+			<version>>=1.1</version>
+		</dependency>
+		<dependency>
+			<group>database</group>
+			<name>dbconnection</name>
+			<version>>=1.0</version>
+		</dependency>
+	</dependencies>
+	<install>
+		<url>mouf/dbloggerinstall/</url>
+	</install>
+</package>
